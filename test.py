@@ -1,4 +1,4 @@
-""" class Calculator():
+""" """ """ class Calculator():
     def add(x, y):
         print(x + y)
         return x + y
@@ -26,7 +26,7 @@ Jillian = Hero("Jillian", 150, ["Potion"])
 Jillian.buy({"title": "Sword", "atk": 34})
 print(Jillian.__dict__)
  """
-class Hero:
+""" class Hero:
     def __init__(self, name, money, inventory):
         self.name = name
         self.money = money
@@ -36,4 +36,15 @@ class Hero:
         print(self.inventory)
 Anson = Hero("Anson", 1, ["Brandon"])
 Anson.buy({"title": "Anson2", "intelligence": 1})
-print(Anson.__dict__)
+print(Anson.__dict__)  """
+
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.__balance = balance  # double underscore means "private"
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def show_balance(self):
+        print(f"{self.owner} has ${self.__balance}")
