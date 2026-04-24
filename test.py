@@ -37,7 +37,7 @@ print(Jillian.__dict__)
 Anson = Hero("Anson", 1, ["Brandon"])
 Anson.buy({"title": "Anson2", "intelligence": 1})
 print(Anson.__dict__)  """
-
+""" 
 class BankAccount:
     def __init__(self, owner, balance):
         self.owner = owner
@@ -47,4 +47,15 @@ class BankAccount:
         self.__balance += amount
 
     def show_balance(self):
-        print(f"{self.owner} has ${self.__balance}")
+        print(f"{self.owner} has ${self.__balance}") """
+
+class Wang:
+    def __init__(self, Brandon, happiness):
+         self.Brandon = Brandon
+         self.__happiness = happiness
+    def play(self, increase) :
+         self.__happiness += increase
+    def show_happiness(self):
+         print(f"{self.Brandon} has {self.__happiness}% happiness.")
+Brandon = Wang("Brandon", 0)
+Brandon.show.happiness
