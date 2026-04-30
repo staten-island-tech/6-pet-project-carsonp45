@@ -48,17 +48,17 @@ class BankAccount:
 
     def show_balance(self):
         print(f"{self.owner} has ${self.__balance}") """
-class Wang:
+""" class Wang:
     def __init__(self, Brandon, happiness):
          self.Brandon = Brandon
          self.__happiness = happiness
     def play(self, increase) :
          self.__happiness += increase
     def show_happiness(self):
-        print(f"{self.Brandon}) is playing fetch.")
+        print(f"{self.Brandon} is coding.")
         print(f"{self.Brandon} has {self.__happiness}% happiness.")
 Brandon = Wang("Brandon", 42)
-Brandon.show_happiness() 
+Brandon.show_happiness()  """
 """ class User:
     def __init__(self, name, email):
         self.name = name
@@ -118,3 +118,15 @@ class Teacher(User):
         return f"{base_info}, Subject: {self.subject}"
 my_teacher = Teacher("Mr. Brown", "brown@example.com", "Science")
 print(my_teacher.display_info())  # Output: User: Mr. Brown, Email: brown@example.com, Subject: Science """
+class Hero:
+    def __init__(self, name, money, inventory):
+        self.name = name
+        self.__money = money
+        self.inventory = inventory
+    def buy(self, item,):
+        cost = item["cost"]
+        self.__money -= cost
+        self.inventory.append(item)
+Anson = Hero("Anson", 1000, ["Apple"])
+Anson.buy({"title": "Sword", "Damage": 100, "cost": 250})
+print(Anson.__dict__)
