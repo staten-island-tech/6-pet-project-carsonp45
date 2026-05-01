@@ -118,7 +118,7 @@ class Teacher(User):
         return f"{base_info}, Subject: {self.subject}"
 my_teacher = Teacher("Mr. Brown", "brown@example.com", "Science")
 print(my_teacher.display_info())  # Output: User: Mr. Brown, Email: brown@example.com, Subject: Science """
-class Hero:
+""" class Hero:
     def __init__(self, name, money, inventory):
         self.name = name
         self.__money = money
@@ -129,4 +129,24 @@ class Hero:
         self.inventory.append(item)
 Anson = Hero("Anson", 1000, ["Apple"])
 Anson.buy({"title": "Sword", "Damage": 100, "cost": 250})
-print(Anson.__dict__)
+print(Anson.__dict__) """
+
+class Ten:
+    def __init__(self, Anson, happiness, hunger, rest , play):
+         self.Anson = Anson
+         self.__happiness = happiness
+         self.__hunger = hunger
+         self.__rest = rest
+         self.__play = play
+    def happiness(self, increase):
+        self.__happiness += increase
+        print("Anson is getting happy!")
+    def hunger(self, add) :
+         self.__hunger += add
+         print("Anson is full!")
+    def rest(self, plus) :
+         self.__rest += plus
+         print("Anson is getting some rest!")
+    def play(self, more) :
+         self.__play += more
+         print("Anson is playing!")        
