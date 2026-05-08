@@ -132,21 +132,33 @@ Anson.buy({"title": "Sword", "Damage": 100, "cost": 250})
 print(Anson.__dict__) """
 
 class Ten:
-    def __init__(self, Anson, happiness, hunger, rest , play):
+    def __init__(self, Anson, happiness, hunger, energy , play):
          self.Anson = Anson
-         self.__happiness = happiness
-         self.__hunger = hunger
-         self.__rest = rest
-         self.__play = play
-    def happiness(self, increase):
-        self.__happiness += increase
-        print("Anson is getting happy!")
-    def hunger(self, add) :
-         self.__hunger += add
-         print("Anson is full!")
-    def rest(self, plus) :
-         self.__rest += plus
+         self.__happiness = 50
+         self.__hunger = 50
+         self.__energy = 50
+    def game_ over(self)
+         if self.__happiness <= 0:
+            print("Game Over")
+         if self.__hunger <= 0:
+            print("Game Over")
+         if self.__energy <= 0:
+            print("Game Over")
+    def play(self):
+        self.__happiness += 10
+        self.energy -= 5
+        print("Anson is playing!")
+    def hunger(self) :
+         self.__hunger += 10
+         print("Anson is eating!")
+    def rest(self) :
+         self.__rest += 15
          print("Anson is getting some rest!")
-    def play(self, more) :
-         self.__play += more
-         print("Anson is playing!")        
+    def status(self)
+    print("Name:", self.name)
+    print("Happiness:", self.happiness)
+    print("Hunger:", self.hunger)
+    print("Energy:", self.energy)
+Starting = input("Take care of Anson")
+pet = Ten("Anson")
+pet.status()
